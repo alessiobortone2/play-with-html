@@ -1,7 +1,6 @@
 class Player
 
-DEFAULT_ATTACK = 20
-
+DEFAULT_VALUE = 20
 attr_reader :name, :hp
 
   def initialize(name, hp=100)
@@ -9,8 +8,7 @@ attr_reader :name, :hp
     @hp = hp
   end
 
-  def hit_point(normal = DEFAULT_ATTACK)
-  	p @hp -= DEFAULT_ATTACK
-  end
-
+  def receive_damage
+    @hp -= DEFAULT_VALUE
+  end 
 end
