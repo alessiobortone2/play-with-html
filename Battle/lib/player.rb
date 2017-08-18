@@ -10,7 +10,7 @@ attr_reader :name, :hp
   end
 
   def hit_point(normal = DEFAULT_ATTACK)
-  	@hp -= DEFAULT_ATTACK
+  	p @hp -= DEFAULT_ATTACK
   end
 
 end
