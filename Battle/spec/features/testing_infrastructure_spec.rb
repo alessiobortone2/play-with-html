@@ -25,3 +25,11 @@ feature Battle do
   end
 
 end
+
+feature Player do 
+  scenario 'it will reduce hp by an amount' do
+    sign_in_and_play
+    click_button "Attack"
+    expect(page).to have_content "Olivia has 80 hit points"
+  end
+end
